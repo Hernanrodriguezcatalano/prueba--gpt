@@ -1,0 +1,319 @@
+body {
+    margin: 10px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    height: 100vh;
+}
+
+.menu {
+    margin: 5%;
+    grid-column: span 4;
+    grid-row: span 4;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.menu-item {
+    background-color: #3498db;
+    color: #fff;
+    /* text-align: center; */
+    /* display: flex; */
+    /* align-items: center; */
+    align-items: flex-start;
+    /* justify-content: left; */
+}
+
+form {
+    text-align: left;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    grid-column: span 8;
+    grid-row: span 4;
+}
+
+button {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15%;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    grid-column: span 8;
+    grid-row: span 4;
+    
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    grid-column: span 8;
+    grid-row: span 4;
+
+}
+
+button {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para los 32 botones con colores diferentes */
+.btn {
+    color: white;
+    font-weight: bold;
+}
+
+/* Colores para los botones */
+.btn-1 {
+    background-color: #3498db;
+}
+
+.btn-2 {
+    background-color: #e74c3c;
+}
+
+.btn-3 {
+    background-color: #2ecc71;
+}
+
+.btn-4 {
+    background-color: #f1c40f;
+}
+
+.btn-5 {
+    background-color: #9b59b6;
+}
+
+.btn-6 {
+    background-color: #e67e22;
+}
+
+.btn-7 {
+    background-color: #1abc9c;
+}
+
+.btn-8 {
+    background-color: #d35400;
+}
+
+.btn-9 {
+    background-color: #34495e;
+}
+
+.btn-10 {
+    background-color: #c0392b;
+}
+
+.btn-11 {
+    background-color: #27ae60;
+}
+
+.btn-12 {
+    background-color: #f39c12;
+}
+
+.btn-13 {
+    background-color: #8e44ad;
+}
+
+.btn-14 {
+    background-color: #d35400;
+}
+
+.btn-15 {
+    background-color: #16a085;
+}
+
+.btn-16 {
+    background-color: #e74c3c;
+}
+
+/* Colores para los botones restantes */
+.btn-17 {
+    background-color: #f1c40f;
+}
+
+.btn-18 {
+    background-color: #3498db;
+}
+
+.btn-19 {
+    background-color: #9b59b6;
+}
+
+.btn-20 {
+    background-color: #e67e22;
+}
+
+.btn-21 {
+    background-color: #1abc9c;
+}
+
+.btn-22 {
+    background-color: #e74c3c;
+}
+
+.btn-23 {
+    background-color: #27ae60;
+}
+
+.btn-24 {
+    background-color: #d35400;
+}
+
+.btn-25 {
+    background-color: #34495e;
+}
+
+.btn-26 {
+    background-color: #c0392b;
+}
+
+.btn-27 {
+    background-color: #16a085;
+}
+
+.btn-28 {
+    background-color: #d35400;
+}
+
+.btn-29 {
+    background-color: #f39c12;
+}
+
+.btn-30 {
+    background-color: #8e44ad;
+}
+
+.btn-31 {
+    background-color: #3498db;
+}
+
+.btn-32 {
+    background-color: #2ecc71;
+}
+
+@media (min-width: 200px) and (max-width: 650px) {
+    .grid-container {
+        grid-template-columns: repeat(6, 1fr); /* Grid de 6 columnas */
+        grid-template-rows: repeat(12, 1fr); /* 12 filas */
+    }
+
+    .menu {
+        grid-column: span 6; /* Formulario ocupa las 6 columnas */
+        grid-row: span 6; /* Formulario ocupa las 6 filas */
+    }
+
+    .buttons {
+        grid-column: span 6; /* Botones ocupan las 6 columnas */
+        grid-row: span 6; /* Botones ocupan las 6 filas */
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); /* 6 columnas para los botones */
+        grid-template-rows: repeat(6, 1fr); /* 6 filas para los botones */
+        gap: 10px;
+    }
+
+    /* Estilo uniforme para todos los botones */
+    .buttons button {
+        flex: 1; /* Todos los botones ocupan el mismo espacio */
+        min-width: 0; /* Permitir que los botones se contraigan si es necesario */
+        width: 100%; /* Ancho del 100% para ocupar toda la columna */
+    }
+}
+
+@media (min-width: 651px) and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        grid-template-rows: auto auto; /* Cambia a filas automáticas */
+    }
+
+    .menu {
+        grid-column: span 1;
+        grid-row: auto;
+    }
+
+    .buttons {
+        grid-column: span 1;
+        grid-row: auto;
+    }
+}
+
+/* Media query para pantallas de tamaño mínimo de 769px y máximo de 1200px (pantallas medianas) */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(9, 1fr); /* Grid de 9 columnas */
+        grid-template-rows: repeat(6, 1fr); /* 6 filas */
+    }
+
+    .menu {
+        grid-column: span 3; /* Formulario en 3 columnas */
+        grid-row: span 6; /* Formulario en 6 filas */
+    }
+
+    .buttons {
+        grid-column: span 6; /* Botones en 6 columnas */
+        grid-row: span 6; /* Botones en 6 filas */
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); /* 6 columnas para los botones */
+        grid-template-rows: repeat(6, 1fr); /* 6 filas para los botones */
+        gap: 10px;
+    }
+
+    /* Estilo uniforme para todos los botones */
+    .buttons button {
+        flex: 1; /* Todos los botones ocupan el mismo espacio */
+        min-width: 0; /* Permitir que los botones se contraigan si es necesario */
+        width: 100%; /* Ancho del 100% para ocupar toda la columna */
+    }
+}
+
+
+/* Media query para pantallas de tamaño mínimo de 1201px (pantallas grandes) */
+@media (min-width: 1201px) {
+    .grid-container {
+        grid-template-columns: repeat(12, 1fr); /* Grid de 12 columnas */
+        grid-template-rows: repeat(4, 1fr); /* 4 filas */
+    }
+
+    .menu {
+        grid-column: span 4; /* Formulario en 4 columnas */
+        grid-row: span 4; /* Formulario en 4 filas */
+    }
+
+    .buttons {
+        grid-column: span 8; /* Botones en 8 columnas */
+        grid-row: span 4; /* Botones en 4 filas */
+        display: grid;
+        grid-template-columns: repeat(8, 1fr); /* 8 columnas para los botones */
+        gap: 10px;
+    }
+}
